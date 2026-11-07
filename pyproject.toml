@@ -7,3 +7,21 @@ dependencies = []
 members = [
     "ingest",
 ]
+
+[tool.ruff]
+line-length = 100
+src = ["ingest/src"] 
+
+[tool.ruff.lint]
+select = [
+    "E", "W", # pycodestyle: style errors and warnings
+    "F",      # pyflakes: unused imports, undefined names
+    "I",      # isort: import order
+    "B",      # flake8-bugbear: likely bugs
+    "UP",     # pyupgrade: modern python syntax
+    "SIM",    # flake8-simplify: simpler code
+
+]
+
+[tool.ruff.format]
+docstring-code-format = true
