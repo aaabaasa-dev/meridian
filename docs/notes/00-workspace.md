@@ -1,9 +1,9 @@
-Setup 
-uv (a fast python package and package manager)  used with a mental model for - Project dependencies (uv add) and tools ( uv tool install ) 
+Setup
+uv (a fast python package and package manager)  used with a mental model for - Project dependencies (uv add) and tools ( uv tool install )
 
 This project will have several python services so uv workspace applies ( one lockfile and one .venv at the root and each service is a member with its own pyproject.toml )
 
-Version pinned for python 3.12 in .python-version. 
+Version pinned for python 3.12 in .python-version.
 
 Note: dbt, MetricFlow & PySpark are slow to support new python releases.
 
@@ -37,7 +37,7 @@ Development setup:
 - write smoke tests
 - configure .gitignore
 - configure root ruff settings
-- install pre-commit 
+- install pre-commit
 - configure GitHub Actions
 
 approach is setup the foundation for a typical event driven data ingestion service
@@ -54,26 +54,4 @@ so think :
 	Unit tests - Does each individual function / class behave correctly
 	End to end tests - complete application workflow work?
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+pre-commit is a tool run across the whole repo. has its own isolated install not .venv

@@ -10,7 +10,7 @@ members = [
 
 [tool.ruff]
 line-length = 100
-src = ["ingest/src"] 
+src = ["ingest/src"]
 
 [tool.ruff.lint]
 select = [
