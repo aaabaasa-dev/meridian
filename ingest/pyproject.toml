@@ -1,0 +1,24 @@
+[project]
+name = "meridian-ingest"
+version = "0.1.0"
+description = "Ingest gateway and multi-tenant traffic simulator for Meridian"
+readme = "README.md"
+authors = [{ name = "Aldridge Abaasa", email = "aldridgeabaasa@gmail.com" }]
+requires-python = ">=3.12"
+dependencies = [
+    "confluent-kafka>=2.16.1",
+    "fastavro>=1.13.1",
+    "pydantic>=2.14.3",
+]
+
+[project.scripts]
+meridian-ingest = "meridian_ingest:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]

@@ -8,7 +8,7 @@ Tenants must never see each other's raw data (Tier 0), while the company can pub
 
 # Architecture
 
-```  
+```
 Tenant agents / simulator (tenants A, B, C ...)
                  |
                  | JSON over HTTPS + tenant token
@@ -75,4 +75,3 @@ Tenant agents / simulator (tenants A, B, C ...)
                  OpenTelemetry + Grafana LGTM | k3s + Helm + Argo CD
 ```
 Wall 1 and Wall 2 mark the two independent tenant-isolation layers one in the metrics service, one in Trino.
-
